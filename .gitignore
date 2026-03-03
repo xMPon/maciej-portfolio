@@ -7,3 +7,8 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Private documents — never commit
+references/
+Achievements/Oxford Brookes University.pdf
+Achievements/Chartered Insurance Institute Financial Service Certificate.pdf
