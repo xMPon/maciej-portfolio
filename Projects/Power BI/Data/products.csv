@@ -1,0 +1,101 @@
+product_id,name,category,brand,price
+1,Gigabyte SSD 8671,SSD,Gigabyte,329.56
+2,Gigabyte Monitor 6864,Monitor,Gigabyte,61.96
+3,MSI CPU 4938,CPU,MSI,129.4
+4,Kingston Case 9012,Case,Kingston,246.76
+5,Kingston Motherboard 5274,Motherboard,Kingston,929.04
+6,Corsair Monitor 4239,Monitor,Corsair,742.78
+7,Kingston Case 3322,Case,Kingston,486.22
+8,Nvidia RAM 3295,RAM,Nvidia,514.02
+9,Kingston Power Supply 8994,Power Supply,Kingston,941.45
+10,Seagate Power Supply 7692,Power Supply,Seagate,839.71
+11,Nvidia Cooler 6168,Cooler,Nvidia,550.61
+12,MSI SSD 7645,SSD,MSI,91.01
+13,MSI GPU 1917,GPU,MSI,100.87
+14,Asus Power Supply 7567,Power Supply,Asus,532.3
+15,Samsung Cooler 4133,Cooler,Samsung,718.94
+16,Corsair Cooler 7899,Cooler,Corsair,93.37
+17,Seagate HDD 1561,HDD,Seagate,488.63
+18,Intel Power Supply 3866,Power Supply,Intel,878.18
+19,Intel Case 1162,Case,Intel,155.47
+20,Nvidia Monitor 5269,Monitor,Nvidia,243.42
+21,Intel Power Supply 4324,Power Supply,Intel,584.54
+22,Seagate HDD 2628,HDD,Seagate,727.93
+23,Samsung GPU 4986,GPU,Samsung,995.22
+24,Seagate HDD 2474,HDD,Seagate,90.18
+25,Intel HDD 8464,HDD,Intel,105.33
+26,Asus Case 2499,Case,Asus,298.25
+27,AMD SSD 3303,SSD,AMD,756.97
+28,Samsung HDD 5322,HDD,Samsung,166.21
+29,Seagate Motherboard 4793,Motherboard,Seagate,998.44
+30,Intel SSD 4199,SSD,Intel,916.36
+31,Intel Motherboard 8401,Motherboard,Intel,164.07
+32,Corsair GPU 9567,GPU,Corsair,732.64
+33,Kingston Monitor 8482,Monitor,Kingston,314.05
+34,Nvidia Motherboard 3648,Motherboard,Nvidia,181.78
+35,Intel CPU 2010,CPU,Intel,529.29
+36,Corsair SSD 3422,SSD,Corsair,818.88
+37,Nvidia RAM 4588,RAM,Nvidia,591.74
+38,Intel Motherboard 6706,Motherboard,Intel,136.82
+39,Intel GPU 2219,GPU,Intel,290.8
+40,Kingston Cooler 6729,Cooler,Kingston,589.08
+41,AMD CPU 1311,CPU,AMD,196.42
+42,AMD CPU 8374,CPU,AMD,403.84
+43,Corsair Case 6406,Case,Corsair,243.67
+44,Intel RAM 4260,RAM,Intel,967.51
+45,Samsung RAM 3921,RAM,Samsung,274.94
+46,Corsair Motherboard 3121,Motherboard,Corsair,330.62
+47,AMD GPU 6454,GPU,AMD,477.45
+48,Gigabyte Motherboard 7106,Motherboard,Gigabyte,756.95
+49,Intel HDD 3443,HDD,Intel,803.73
+50,AMD GPU 3728,GPU,AMD,402.18
+51,Nvidia Case 9965,Case,Nvidia,181.36
+52,MSI Motherboard 2416,Motherboard,MSI,435.28
+53,AMD CPU 3428,CPU,AMD,663.44
+54,MSI Cooler 7367,Cooler,MSI,86.32
+55,Asus Power Supply 1384,Power Supply,Asus,184.08
+56,Asus CPU 5138,CPU,Asus,476.72
+57,Nvidia Monitor 5018,Monitor,Nvidia,559.69
+58,Gigabyte Monitor 4037,Monitor,Gigabyte,458.52
+59,Kingston HDD 2462,HDD,Kingston,951.45
+60,Asus CPU 3885,CPU,Asus,686.12
+61,Samsung SSD 3975,SSD,Samsung,409.72
+62,Intel HDD 4606,HDD,Intel,204.37
+63,Nvidia SSD 9495,SSD,Nvidia,305.53
+64,Intel RAM 5022,RAM,Intel,617.57
+65,MSI HDD 3107,HDD,MSI,770.15
+66,MSI GPU 3092,GPU,MSI,463.61
+67,Samsung CPU 1909,CPU,Samsung,252.89
+68,Asus SSD 7049,SSD,Asus,324.03
+69,Corsair Power Supply 7974,Power Supply,Corsair,868.2
+70,MSI GPU 7121,GPU,MSI,731.32
+71,Corsair GPU 2478,GPU,Corsair,751.91
+72,Asus HDD 3510,HDD,Asus,307.11
+73,Seagate Case 1992,Case,Seagate,267.11
+74,MSI Cooler 9993,Cooler,MSI,626.03
+75,Corsair Motherboard 1062,Motherboard,Corsair,628.22
+76,Kingston Motherboard 9259,Motherboard,Kingston,496.71
+77,AMD Power Supply 2226,Power Supply,AMD,614.11
+78,Kingston Motherboard 7579,Motherboard,Kingston,920.85
+79,Seagate RAM 2660,RAM,Seagate,365.35
+80,MSI Motherboard 5188,Motherboard,MSI,977.91
+81,MSI GPU 4704,GPU,MSI,235.93
+82,Samsung RAM 5474,RAM,Samsung,864.61
+83,Intel Monitor 2076,Monitor,Intel,773.51
+84,Corsair RAM 7998,RAM,Corsair,385.39
+85,Gigabyte HDD 3080,HDD,Gigabyte,841.26
+86,AMD Monitor 9074,Monitor,AMD,679.26
+87,Samsung Motherboard 2582,Motherboard,Samsung,632.21
+88,AMD Motherboard 5096,Motherboard,AMD,710.73
+89,Samsung Monitor 2680,Monitor,Samsung,468.36
+90,Nvidia SSD 5423,SSD,Nvidia,947.44
+91,Asus Power Supply 8106,Power Supply,Asus,117.47
+92,Gigabyte GPU 1646,GPU,Gigabyte,157.5
+93,MSI CPU 1707,CPU,MSI,756.7
+94,Intel RAM 3781,RAM,Intel,365.63
+95,Nvidia GPU 9966,GPU,Nvidia,66.06
+96,Intel RAM 3358,RAM,Intel,190.26
+97,Intel Power Supply 4134,Power Supply,Intel,665.93
+98,Corsair CPU 7516,CPU,Corsair,250.25
+99,Seagate Case 9075,Case,Seagate,831.75
+100,Samsung CPU 5913,CPU,Samsung,562.46
