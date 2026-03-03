@@ -10,7 +10,7 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 
 - **Multilingual** — full content available in English, French, Polish, German and Spanish via a language switcher
 - **Responsive** — mobile-first layout built on Bootstrap 5
-- **Certificate viewer** — modal pop-up previews for all certifications and degree certificates
+- **Certificate viewer** — modal pop-up previews for professional certifications
 - **Module viewer** — detailed module breakdowns for MSc (University of Bristol), BSc (Oxford Brookes) and CII qualifications
 - **Animated** — scroll-triggered animations via AOS
 - **Portfolio filter** — project cards filterable by category (FinTech, Data, Web)
@@ -31,7 +31,7 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 
 1. **Hero** — introduction, headline stats and CV download
 2. **Skills** — technical skills across analytics, cloud, development and delivery
-3. **Achievements** — certifications (AZ-900, SAFe, SAS, CII) and degree certificates
+3. **Achievements** — professional certifications (AZ-900, SAFe, SAS, CII)
 4. **Education** — MSc Bristol, CII Level 3, BSc Oxford Brookes, City of Bath College
 5. **Experience** — six roles from 2017 to present
 6. **Portfolio** — selected projects with descriptions and links
@@ -44,7 +44,6 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 - SAFe Agilist
 - SAS Certified Specialist: Base Programming (SAS 9.4)
 - CII Level 3 Certificate in Financial Services
-- BSc Degree Certificate — Oxford Brookes University
 
 ## Author
 

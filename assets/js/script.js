@@ -30,9 +30,6 @@ const translations = {
 
         ach_tag: 'Credentials', ach_title: 'Certifications & Achievements',
         badge1: 'Bilingual: English & Polish', badge2: 'Scrum Master', badge3: 'Driving Licence', badge4: 'CII Level 3 Certified',
-        transcript_title: 'Academic Transcript',
-        degree_title: 'BSc Financial Modelling & Data Analytics — Degree Certificate',
-        view_full: 'Open Full Size',
 
         edu_tag: 'Learning Path', edu_title: 'Education',
         edu1_degree: 'MSc Financial Technology with Data Science',
@@ -97,9 +94,6 @@ const translations = {
 
         ach_tag: 'Accréditations', ach_title: 'Certifications & Réalisations',
         badge1: 'Bilingue : Anglais & Polonais', badge2: 'Scrum Master', badge3: 'Permis de conduire', badge4: 'Certifié CII Niveau 3',
-        transcript_title: 'Relevé de notes',
-        degree_title: 'BSc Modélisation Financière & Analyse de Données — Diplôme',
-        view_full: 'Ouvrir en plein écran',
 
         edu_tag: 'Parcours', edu_title: 'Éducation',
         edu1_degree: 'MSc Technologie Financière avec Science des Données',
@@ -164,9 +158,6 @@ const translations = {
 
         ach_tag: 'Poświadczenia', ach_title: 'Certyfikaty i Osiągnięcia',
         badge1: 'Dwujęzyczny: Angielski i Polski', badge2: 'Scrum Master', badge3: 'Prawo jazdy', badge4: 'Certyfikat CII Poziom 3',
-        transcript_title: 'Transkrypt Akademicki',
-        degree_title: 'BSc Modelowanie Finansowe & Analiza Danych — Dyplom',
-        view_full: 'Otwórz w pełnym rozmiarze',
 
         edu_tag: 'Ścieżka nauki', edu_title: 'Edukacja',
         edu1_degree: 'MSc Technologia Finansowa z Nauką o Danych',
@@ -231,9 +222,6 @@ const translations = {
 
         ach_tag: 'Nachweise', ach_title: 'Zertifikate & Leistungen',
         badge1: 'Zweisprachig: Englisch & Polnisch', badge2: 'Scrum Master', badge3: 'Führerschein', badge4: 'CII Stufe 3 Zertifiziert',
-        transcript_title: 'Akademisches Transcript',
-        degree_title: 'BSc Finanzmodellierung & Datenanalyse — Abschlusszeugnis',
-        view_full: 'In voller Größe öffnen',
 
         edu_tag: 'Bildungsweg', edu_title: 'Ausbildung',
         edu1_degree: 'MSc Finanztechnologie mit Datenwissenschaft',
@@ -298,9 +286,6 @@ const translations = {
 
         ach_tag: 'Credenciales', ach_title: 'Certificaciones y Logros',
         badge1: 'Bilingüe: Inglés y Polaco', badge2: 'Scrum Master', badge3: 'Carnet de conducir', badge4: 'Certificado CII Nivel 3',
-        transcript_title: 'Expediente Académico',
-        degree_title: 'BSc Modelado Financiero & Análisis de Datos — Título Universitario',
-        view_full: 'Abrir en tamaño completo',
 
         edu_tag: 'Formación', edu_title: 'Educación',
         edu1_degree: 'MSc Tecnología Financiera con Ciencia de Datos',
