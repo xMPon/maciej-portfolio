@@ -679,8 +679,7 @@ function initCertModal() {
         const src   = trigger.getAttribute('data-cert-src')   || '';
         const title = trigger.getAttribute('data-cert-title') || 'Certificate';
         document.getElementById('certViewModalLabel').textContent = title;
-        document.getElementById('certViewFrame').src      = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
-        document.getElementById('certViewFullLink').href  = src;
+        document.getElementById('certViewFrame').src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
     });
     modal.addEventListener('hide.bs.modal', function () {
         document.getElementById('certViewFrame').src = '';
