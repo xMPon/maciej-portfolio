@@ -943,8 +943,8 @@ body {
     .cert-img-wrap .cert-visual { display: flex; }
 }
 
-/* ── Touch devices: show overlays without hover ─────────────── */
-@media (hover: none) {
+/* ── Mobile: always show overlays (no hover on touch) ───────── */
+@media (max-width: 767.98px) {
     .cert-overlay,
     .project-overlay {
         opacity: 1;
