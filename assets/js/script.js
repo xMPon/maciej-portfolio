@@ -748,7 +748,6 @@ function initCertModal() {
             frame.src = '';
             frame.classList.add('d-none');
             document.getElementById('certViewOpenLink').href = src;
-            document.getElementById('certViewDownloadLink').href = src;
             fallback.classList.remove('d-none');
         } else {
             fallback.classList.add('d-none');
