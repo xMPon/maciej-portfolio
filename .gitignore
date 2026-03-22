@@ -41,3 +41,5 @@ credentials/
 *.jks
 *.keystore
 *.kdbx
+
+CLAUDE.md
