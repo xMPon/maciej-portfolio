@@ -49,7 +49,7 @@ const translations = {
         filter_all: 'All', filter_fintech: 'FinTech', filter_data: 'Data', filter_dev: 'Dev',
 
         proj1_title: 'Financial Planning Platform Modelling',
-        proj4_title: 'NYPD Crime Analytics Dashboard',
+        proj4_title: 'Power BI Walkthrough',
         proj6_title: 'SAS Base Programming',
         proj7_title: 'Mortgage Repayment Calculator',
         proj8_title: 'Blockchain Supply Chain Dissertation',
@@ -112,7 +112,7 @@ const translations = {
         filter_all: 'Tout', filter_fintech: 'FinTech', filter_data: 'Données', filter_dev: 'Dev',
 
         proj1_title: 'Modélisation de Plateforme de Planification Financière',
-        proj4_title: 'Tableau de Bord Analytique Criminalité NYPD',
+        proj4_title: 'Power BI Walkthrough',
         proj6_title: 'Programmation de Base SAS',
         proj7_title: 'Calculatrice de Remboursement Hypothécaire',
         proj8_title: 'Dissertation Blockchain sur la Chaîne d\'Approvisionnement',
@@ -175,7 +175,7 @@ const translations = {
         filter_all: 'Wszystkie', filter_fintech: 'FinTech', filter_data: 'Dane', filter_dev: 'Dev',
 
         proj1_title: 'Modelowanie Platformy Planowania Finansowego',
-        proj4_title: 'Dashboard Analityki Przestępczości NYPD',
+        proj4_title: 'Power BI Walkthrough',
         proj6_title: 'Programowanie Podstawowe SAS',
         proj7_title: 'Kalkulator Spłaty Kredytu Hipotecznego',
         proj8_title: 'Praca Dyplomowa: Blockchain w Łańcuchu Dostaw',
@@ -238,7 +238,7 @@ const translations = {
         filter_all: 'Alle', filter_fintech: 'FinTech', filter_data: 'Daten', filter_dev: 'Dev',
 
         proj1_title: 'Modellierung einer Finanzplanungsplattform',
-        proj4_title: 'NYPD Kriminalitätsanalyse-Dashboard',
+        proj4_title: 'Power BI Walkthrough',
         proj6_title: 'SAS Basisprogrammierung',
         proj7_title: 'Hypothekenrechner',
         proj8_title: 'Blockchain Lieferketten-Dissertation',
@@ -301,7 +301,7 @@ const translations = {
         filter_all: 'Todos', filter_fintech: 'FinTech', filter_data: 'Datos', filter_dev: 'Dev',
 
         proj1_title: 'Modelización de Plataforma de Planificación Financiera',
-        proj4_title: 'Dashboard de Análisis Criminal NYPD',
+        proj4_title: 'Power BI Walkthrough',
         proj6_title: 'Programación Base SAS',
         proj7_title: 'Calculadora de Amortización Hipotecaria',
         proj8_title: 'Disertación Blockchain sobre Cadena de Suministro',
