@@ -610,6 +610,7 @@
                 <button type="button" class="filter-btn active" data-filter="all" data-translate="filter_all">All</button>
                 <button type="button" class="filter-btn" data-filter="fintech" data-translate="filter_fintech">FinTech</button>
                 <button type="button" class="filter-btn" data-filter="data" data-translate="filter_data">Data</button>
+                <button type="button" class="filter-btn" data-filter="dev" data-translate="filter_dev">Dev</button>
             </div>
             <div class="row g-4" id="portfolioGrid">
                 <!-- Project 1: Intelliflo Financial Modelling -->
@@ -636,11 +637,28 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 4: NYPD Crime Analytics -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="data" data-aos="zoom-in" data-aos-delay="100">
+                <!-- Project 4: NYPD Crime Analytics (Power BI) -->
+                <div class="col-md-12 col-lg-8 portfolio-item" data-category="data" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-card">
                         <div class="project-img-wrap">
-                            <img src="assets/img/project-placeholder.svg" alt="NYPD Crime Analytics" class="img-fluid">
+                            <!-- ═══════════════════════════════════════════════════════
+                                 YOUTUBE EMBED — paste your iframe here when ready.
+                                 Replace the placeholder div below with:
+
+                                 <div class="ratio ratio-16x9">
+                                     <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                                             title="Power BI Walkthrough – Beginner Level"
+                                             allow="accelerometer; autoplay; clipboard-write;
+                                                    encrypted-media; gyroscope; picture-in-picture"
+                                             allowfullscreen></iframe>
+                                 </div>
+                            ═══════════════════════════════════════════════════════ -->
+                            <div class="ratio ratio-16x9 d-flex align-items-center justify-content-center yt-placeholder-wrap">
+                                <div class="text-center text-white-50 py-5">
+                                    <i class="fab fa-youtube fa-4x mb-3 d-block yt-placeholder-icon"></i>
+                                    <span class="fw-semibold">Power BI Walkthrough — video coming soon</span>
+                                </div>
+                            </div>
                             <div class="project-overlay">
                                 <a href="https://github.com/xMPon" target="_blank"
                                    rel="noopener" class="btn btn-sm btn-light me-2">
@@ -652,9 +670,34 @@
                             <span class="project-cat">Data</span>
                             <h5 data-translate="proj4_title">NYPD Crime Analytics Dashboard</h5>
                             <p data-translate="proj4_desc">Personal Power BI project analysing NYPD arrest and collision data.
-                            Integrated demographic, geographic and time-series datasets to surface actionable insights.</p>
+                            Integrated demographic, geographic and time-series datasets to surface actionable insights
+                            through interactive dashboards with advanced filtering and DAX-driven measures.</p>
                             <div class="project-tags">
-                                <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Data Analysis</span>
+                                <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span><span class="tag">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5: FinModel SaaS Platform -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="dev fintech" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-img-wrap">
+                            <img src="assets/img/project-placeholder.svg" alt="FinModel SaaS Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://github.com/xMPon" target="_blank"
+                                   rel="noopener" class="btn btn-sm btn-light me-2">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <span class="project-cat">Dev · FinTech</span>
+                            <h5 data-translate="proj5_title">FinModel SaaS Platform</h5>
+                            <p data-translate="proj5_desc">Full-stack financial modelling SaaS platform enabling professionals
+                            to build DCF and comparables valuations, upload historical data, collaborate in real-time,
+                            and export professional reports — built with React, Node.js and PostgreSQL.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Auth0</span><span class="tag">Stripe</span>
                             </div>
                         </div>
                     </div>

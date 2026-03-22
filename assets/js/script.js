@@ -46,7 +46,7 @@ const translations = {
         exp6_role: 'Help Desk Support',
 
         port_tag: 'Projects', port_title: 'Portfolio',
-        filter_all: 'All', filter_fintech: 'FinTech', filter_data: 'Data',
+        filter_all: 'All', filter_fintech: 'FinTech', filter_data: 'Data', filter_dev: 'Dev',
 
         proj1_title: 'Financial Planning Platform Modelling',
         proj4_title: 'NYPD Crime Analytics Dashboard',
@@ -107,7 +107,7 @@ const translations = {
         exp6_role: 'Support Helpdesk',
 
         port_tag: 'Projets', port_title: 'Portfolio',
-        filter_all: 'Tout', filter_fintech: 'FinTech', filter_data: 'Données',
+        filter_all: 'Tout', filter_fintech: 'FinTech', filter_data: 'Données', filter_dev: 'Dev',
 
         proj1_title: 'Modélisation de Plateforme de Planification Financière',
         proj4_title: 'Tableau de Bord Analytique Criminalité NYPD',
@@ -168,7 +168,7 @@ const translations = {
         exp6_role: 'Wsparcie Help Desk',
 
         port_tag: 'Projekty', port_title: 'Portfolio',
-        filter_all: 'Wszystkie', filter_fintech: 'FinTech', filter_data: 'Dane',
+        filter_all: 'Wszystkie', filter_fintech: 'FinTech', filter_data: 'Dane', filter_dev: 'Dev',
 
         proj1_title: 'Modelowanie Platformy Planowania Finansowego',
         proj4_title: 'Dashboard Analityki Przestępczości NYPD',
@@ -229,7 +229,7 @@ const translations = {
         exp6_role: 'Helpdesk-Support',
 
         port_tag: 'Projekte', port_title: 'Portfolio',
-        filter_all: 'Alle', filter_fintech: 'FinTech', filter_data: 'Daten',
+        filter_all: 'Alle', filter_fintech: 'FinTech', filter_data: 'Daten', filter_dev: 'Dev',
 
         proj1_title: 'Modellierung einer Finanzplanungsplattform',
         proj4_title: 'NYPD Kriminalitätsanalyse-Dashboard',
@@ -290,7 +290,7 @@ const translations = {
         exp6_role: 'Soporte de Help Desk',
 
         port_tag: 'Proyectos', port_title: 'Portfolio',
-        filter_all: 'Todos', filter_fintech: 'FinTech', filter_data: 'Datos',
+        filter_all: 'Todos', filter_fintech: 'FinTech', filter_data: 'Datos', filter_dev: 'Dev',
 
         proj1_title: 'Modelización de Plataforma de Planificación Financiera',
         proj4_title: 'Dashboard de Análisis Criminal NYPD',
@@ -446,8 +446,8 @@ function initPortfolioFilter() {
 
             const filter = btn.dataset.filter;
             items.forEach(item => {
-                const cat = item.dataset.category;
-                const show = filter === 'all' || cat === filter;
+                const cats = (item.dataset.category || '').split(/\s+/);
+                const show = filter === 'all' || cats.includes(filter);
                 item.classList.toggle('hidden', !show);
             });
         });

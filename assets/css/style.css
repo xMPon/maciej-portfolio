@@ -920,6 +920,15 @@ body {
     .btn-hero { width: 100%; max-width: 260px; }
 }
 
+/* ── YouTube Placeholder ────────────────────────────────────── */
+.yt-placeholder-wrap {
+    background: #111;
+    min-height: 220px;
+}
+.yt-placeholder-icon {
+    color: rgba(255, 0, 0, 0.8);
+}
+
 /* ── Print Styles ───────────────────────────────────────────── */
 @media print {
     #mainNav, #progressBar, .back-to-top, .scroll-down-arrow,
