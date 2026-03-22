@@ -742,16 +742,11 @@ function initCertModal() {
         const src   = trigger.getAttribute('data-cert-src')   || '';
         const title = trigger.getAttribute('data-cert-title') || 'Certificate';
         document.getElementById('certViewModalLabel').textContent = title;
-        const frame    = document.getElementById('certViewFrame');
-        const fallback = document.getElementById('certViewFallback');
+        const frame = document.getElementById('certViewFrame');
         if (window.matchMedia('(max-width: 767.98px)').matches) {
-            frame.src = '';
-            frame.classList.add('d-none');
-            document.getElementById('certViewOpenLink').href = src;
-            fallback.classList.remove('d-none');
+            const base = 'https://xmpon.github.io/maciej-portfolio/';
+            frame.src = 'https://docs.google.com/viewer?url=' + encodeURIComponent(base + src) + '&embedded=true';
         } else {
-            fallback.classList.add('d-none');
-            frame.classList.remove('d-none');
             frame.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
         }
     });

@@ -481,15 +481,6 @@ body {
 }
 .cert-modal-body { background: #f8f9fa; }
 .cert-modal-frame { width: 100%; height: 80vh; border: none; display: block; }
-.cert-modal-fallback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2.5rem 1.5rem;
-    min-height: 220px;
-    text-align: center;
-}
 
 .view-cert-badge--soon {
     color: var(--text-mid);
