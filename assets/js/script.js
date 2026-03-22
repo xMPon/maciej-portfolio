@@ -42,7 +42,7 @@ const translations = {
         exp2_role: 'Graduate Data Consultant',
         exp3_role: 'Customer Assistant',
         exp4_role: 'IT & E-Commerce Intern',
-        exp5_role: 'Chef',
+        exp5_role: 'Chalet Host (Chef)',
         exp6_role: 'Help Desk Support',
 
         port_tag: 'Projects', port_title: 'Portfolio',
@@ -105,7 +105,7 @@ const translations = {
         exp2_role: 'Consultante Data Diplômée',
         exp3_role: 'Assistante Clientèle',
         exp4_role: 'Stagiaire IT & E-Commerce',
-        exp5_role: 'Chef',
+        exp5_role: 'Hôte de Chalet (Chef)',
         exp6_role: 'Support Helpdesk',
 
         port_tag: 'Projets', port_title: 'Portfolio',
@@ -168,7 +168,7 @@ const translations = {
         exp2_role: 'Konsultant Danych – Absolwent',
         exp3_role: 'Pracownik Obsługi Klienta',
         exp4_role: 'Stażysta IT i E-Commerce',
-        exp5_role: 'Kucharz',
+        exp5_role: 'Gospodarz Chatki (Szef Kuchni)',
         exp6_role: 'Wsparcie Help Desk',
 
         port_tag: 'Projekty', port_title: 'Portfolio',
@@ -231,7 +231,7 @@ const translations = {
         exp2_role: 'Graduate Data Consultant',
         exp3_role: 'Kundenassistent',
         exp4_role: 'IT & E-Commerce Praktikant',
-        exp5_role: 'Koch',
+        exp5_role: 'Chalet-Gastgeber (Koch)',
         exp6_role: 'Helpdesk-Support',
 
         port_tag: 'Projekte', port_title: 'Portfolio',
@@ -294,7 +294,7 @@ const translations = {
         exp2_role: 'Consultora de Datos Graduada',
         exp3_role: 'Asistente de Atención al Cliente',
         exp4_role: 'Becario de IT y E-Commerce',
-        exp5_role: 'Chef',
+        exp5_role: 'Anfitrión de Chalet (Chef)',
         exp6_role: 'Soporte de Help Desk',
 
         port_tag: 'Proyectos', port_title: 'Portfolio',
