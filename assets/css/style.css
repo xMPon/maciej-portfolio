@@ -935,6 +935,15 @@ body {
     .btn-hero { width: 100%; max-width: 260px; }
 }
 
+/* ── Touch devices: show overlays without hover ─────────────── */
+@media (hover: none) {
+    .cert-overlay,
+    .project-overlay {
+        opacity: 1;
+        background: rgba(10,102,194,0.55);
+    }
+}
+
 /* ── YouTube Placeholder ────────────────────────────────────── */
 .yt-placeholder-wrap {
     background: #111;
