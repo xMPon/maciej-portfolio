@@ -46,13 +46,10 @@ const translations = {
         exp6_role: 'Help Desk Support',
 
         port_tag: 'Projects', port_title: 'Portfolio',
-        filter_all: 'All', filter_fintech: 'FinTech', filter_data: 'Data', filter_web: 'Web',
+        filter_all: 'All', filter_fintech: 'FinTech', filter_data: 'Data',
 
         proj1_title: 'Financial Planning Platform Modelling',
-        proj2_title: 'Claude AI Workflow Automation',
-        proj3_title: 'Power BI Client Dashboards',
         proj4_title: 'NYPD Crime Analytics Dashboard',
-        proj5_title: 'This CV & Portfolio Website',
         proj6_title: 'SAS Base Programming',
 
         hob_tag: 'Outside Work', hob_title: 'Hobbies & Interests',
@@ -110,13 +107,10 @@ const translations = {
         exp6_role: 'Support Helpdesk',
 
         port_tag: 'Projets', port_title: 'Portfolio',
-        filter_all: 'Tout', filter_fintech: 'FinTech', filter_data: 'Données', filter_web: 'Web',
+        filter_all: 'Tout', filter_fintech: 'FinTech', filter_data: 'Données',
 
         proj1_title: 'Modélisation de Plateforme de Planification Financière',
-        proj2_title: 'Automatisation des Flux de Travail avec Claude AI',
-        proj3_title: 'Tableaux de Bord Power BI pour Clients',
         proj4_title: 'Tableau de Bord Analytique Criminalité NYPD',
-        proj5_title: 'Ce Site CV & Portfolio',
         proj6_title: 'Programmation de Base SAS',
 
         hob_tag: 'Hors Travail', hob_title: 'Loisirs & Intérêts',
@@ -174,13 +168,10 @@ const translations = {
         exp6_role: 'Wsparcie Help Desk',
 
         port_tag: 'Projekty', port_title: 'Portfolio',
-        filter_all: 'Wszystkie', filter_fintech: 'FinTech', filter_data: 'Dane', filter_web: 'Web',
+        filter_all: 'Wszystkie', filter_fintech: 'FinTech', filter_data: 'Dane',
 
         proj1_title: 'Modelowanie Platformy Planowania Finansowego',
-        proj2_title: 'Automatyzacja Przepływów Pracy z Claude AI',
-        proj3_title: 'Dashboardy Power BI dla Klientów',
         proj4_title: 'Dashboard Analityki Przestępczości NYPD',
-        proj5_title: 'Ta Strona CV i Portfolio',
         proj6_title: 'Programowanie Podstawowe SAS',
 
         hob_tag: 'Poza pracą', hob_title: 'Hobby i Zainteresowania',
@@ -238,13 +229,10 @@ const translations = {
         exp6_role: 'Helpdesk-Support',
 
         port_tag: 'Projekte', port_title: 'Portfolio',
-        filter_all: 'Alle', filter_fintech: 'FinTech', filter_data: 'Daten', filter_web: 'Web',
+        filter_all: 'Alle', filter_fintech: 'FinTech', filter_data: 'Daten',
 
         proj1_title: 'Modellierung einer Finanzplanungsplattform',
-        proj2_title: 'Claude AI Workflow-Automatisierung',
-        proj3_title: 'Power BI Kunden-Dashboards',
         proj4_title: 'NYPD Kriminalitätsanalyse-Dashboard',
-        proj5_title: 'Dieser Lebenslauf & Portfolio',
         proj6_title: 'SAS Basisprogrammierung',
 
         hob_tag: 'Freizeit', hob_title: 'Hobbys & Interessen',
@@ -302,13 +290,10 @@ const translations = {
         exp6_role: 'Soporte de Help Desk',
 
         port_tag: 'Proyectos', port_title: 'Portfolio',
-        filter_all: 'Todos', filter_fintech: 'FinTech', filter_data: 'Datos', filter_web: 'Web',
+        filter_all: 'Todos', filter_fintech: 'FinTech', filter_data: 'Datos',
 
         proj1_title: 'Modelización de Plataforma de Planificación Financiera',
-        proj2_title: 'Automatización de Flujos de Trabajo con Claude AI',
-        proj3_title: 'Dashboards Power BI para Clientes',
         proj4_title: 'Dashboard de Análisis Criminal NYPD',
-        proj5_title: 'Este CV y Portfolio',
         proj6_title: 'Programación Base SAS',
 
         hob_tag: 'Fuera del trabajo', hob_title: 'Aficiones e Intereses',
