@@ -20,7 +20,7 @@ const translations = {
         hero_title: 'Financial Modelling Analyst · Data Analytics',
         hero_bio: 'Experienced financial modeller and data analyst in financial services, with hands-on experience building Excel, Python and C# models for budgeting, forecasting and regulatory change. Skilled in SQL, Azure and Power BI, translating complex data into clear insights for stakeholders.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Get In Touch',
-        hero_download: '<i class="fas fa-download me-2"></i>Download CV',
+        hero_download: '<i class="fas fa-file-lines me-2"></i>View CV',
 
         stat_years: 'Years Experience', stat_companies: 'Companies', stat_certs: 'Certifications',
 
@@ -83,7 +83,7 @@ const translations = {
         hero_title: 'Analyste en Modélisation Financière · Data Analytics',
         hero_bio: "Analyste financier expérimenté dans les services financiers, spécialisé dans la modélisation Excel, Python et C# pour la budgétisation, les prévisions et la conformité réglementaire. Compétent en SQL, Azure et Power BI.",
         hero_cta: '<i class="fas fa-envelope me-2"></i>Me Contacter',
-        hero_download: '<i class="fas fa-download me-2"></i>Télécharger CV',
+        hero_download: '<i class="fas fa-file-lines me-2"></i>Voir le CV',
 
         stat_years: "Ans d'Expérience", stat_companies: 'Entreprises', stat_certs: 'Certifications',
 
@@ -146,7 +146,7 @@ const translations = {
         hero_title: 'Analityk Modelowania Finansowego · Analityka Danych',
         hero_bio: 'Doświadczony analityk finansowy i danych w sektorze usług finansowych, specjalizujący się w budowaniu modeli w Excelu, Pythonie i C# do budżetowania, prognozowania i zmian regulacyjnych. Biegły w SQL, Azure i Power BI.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Skontaktuj się',
-        hero_download: '<i class="fas fa-download me-2"></i>Pobierz CV',
+        hero_download: '<i class="fas fa-file-lines me-2"></i>Zobacz CV',
 
         stat_years: 'Lata Doświadczenia', stat_companies: 'Firmy', stat_certs: 'Certyfikaty',
 
@@ -209,7 +209,7 @@ const translations = {
         hero_title: 'Financial Modelling Analyst · Datenanalyse',
         hero_bio: 'Erfahrener Finanzmodeller und Datenanalyst im Finanzdienstleistungsbereich, spezialisiert auf Excel-, Python- und C#-Modelle für Budgetierung, Prognosen und regulatorische Änderungen. Kenntnisse in SQL, Azure und Power BI.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Kontakt aufnehmen',
-        hero_download: '<i class="fas fa-download me-2"></i>Lebenslauf herunterladen',
+        hero_download: '<i class="fas fa-file-lines me-2"></i>Lebenslauf ansehen',
 
         stat_years: 'Jahre Erfahrung', stat_companies: 'Unternehmen', stat_certs: 'Zertifikate',
 
@@ -272,7 +272,7 @@ const translations = {
         hero_title: 'Analista de Modelización Financiera · Análisis de Datos',
         hero_bio: 'Analista financiero y de datos con experiencia en servicios financieros, especializado en modelos Excel, Python y C# para presupuestación, previsión y cambios regulatorios. Con dominio de SQL, Azure y Power BI.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Contactar',
-        hero_download: '<i class="fas fa-download me-2"></i>Descargar CV',
+        hero_download: '<i class="fas fa-file-lines me-2"></i>Ver CV',
 
         stat_years: 'Años de Experiencia', stat_companies: 'Empresas', stat_certs: 'Certificaciones',
 
