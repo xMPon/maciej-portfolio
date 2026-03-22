@@ -746,6 +746,8 @@ body {
 }
 .project-body h5 { font-size: 0.98rem; font-weight: 700; margin-bottom: 0.4rem; }
 .project-body p { font-size: 0.85rem; color: var(--text-mid); margin-bottom: 0.75rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: 4px; }
+.btn-xs { padding: 0.2rem 0.5rem; font-size: 0.75rem; }
 
 /* Portfolio hide animation */
 .portfolio-item { transition: opacity 0.4s, transform 0.4s; }
