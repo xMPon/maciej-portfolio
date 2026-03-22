@@ -596,15 +596,35 @@ function initContactForm() {
 
         if (!valid) return;
 
-        // Simulate send (no backend — replace with EmailJS / Formspree for real sending)
-        showFormAlert(alert, 'success',
-            '<i class="fas fa-check-circle me-2"></i>Message sent! I\'ll get back to you soon.');
-        form.reset();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
 
-        // In real usage, integrate EmailJS:
-        // emailjs.sendForm('YOUR_SERVICE', 'YOUR_TEMPLATE', form).then(...)
-        // Or post to Formspree:
-        // fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: new FormData(form) })
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                access_key: 'REPLACE_WITH_NEW_WEB3FORMS_ACCESS_KEY',
+                email: email.value,
+                subject: subject.value,
+                message: message.value
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                showFormAlert(alert, 'success',
+                    '<i class="fas fa-check-circle me-2"></i>Message sent! I\'ll get back to you soon.');
+                form.reset();
+            } else {
+                showFormAlert(alert, 'danger',
+                    '<i class="fas fa-exclamation-circle me-2"></i>Something went wrong. Please try again.');
+            }
+        })
+        .catch(() => {
+            showFormAlert(alert, 'danger',
+                '<i class="fas fa-exclamation-circle me-2"></i>Something went wrong. Please try again.');
+        })
+        .finally(() => { btn.disabled = false; });
     });
 }
 
