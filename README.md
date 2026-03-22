@@ -2,6 +2,8 @@
 
 A responsive, multilingual personal portfolio website built with HTML, CSS and JavaScript.
 
+https://xmpon.github.io/maciej-portfolio/
+
 ## Overview
 
 This site presents my professional profile as a Financial Modelling Analyst and Data Analytics specialist. It covers my work experience, education, technical skills, certifications and selected projects.
