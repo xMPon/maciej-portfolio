@@ -349,6 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     initLanguageToggle();
     initContactForm();
+    initEmailLink();
     initBackToTop();
     initFooterYear();
     initCertModal();
@@ -714,6 +715,15 @@ function initBackToTop() {
     btn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+}
+
+/* ── Email Assembly (anti-harvesting) ─────────────────────── */
+function initEmailLink() {
+    const link = document.getElementById('contactEmailLink');
+    if (!link) return;
+    const addr = ['maciej.poniewierski', 'outlook.com'].join('@');
+    link.href = 'mailto:' + addr;
+    link.textContent = addr;
 }
 
 /* ── Footer Year ──────────────────────────────────────────── */
