@@ -628,30 +628,6 @@
                 <button type="button" class="filter-btn" data-filter="dev" data-translate="filter_dev">Dev</button>
             </div>
             <div class="row g-4" id="portfolioGrid">
-                <!-- Project 1: Intelliflo Financial Modelling -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="fintech" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="assets/img/project-placeholder.svg" alt="Financial Planning Platform" class="img-fluid">
-                            <div class="project-overlay">
-                                <a href="https://www.intelliflo.com" target="_blank"
-                                   rel="noopener" class="btn btn-sm btn-light me-2">
-                                    <i class="fas fa-external-link-alt me-1"></i>Company
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <span class="project-cat">FinTech</span>
-                            <h5 data-translate="proj1_title">Financial Planning Platform Modelling</h5>
-                            <p data-translate="proj1_desc">Built and maintained financial models in Excel and C# for a SaaS platform
-                            serving 30,000+ financial advisors worldwide. Covered income tax, CGT, pensions and
-                            multi-jurisdiction regulatory rules.</p>
-                            <div class="project-tags">
-                                <span class="tag">Excel</span><span class="tag">C#</span><span class="tag">Intelliflo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Project 4: NYPD Crime Analytics (Power BI) -->
                 <div class="col-md-12 col-lg-8 portfolio-item" data-category="data" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-card">
@@ -662,16 +638,6 @@
                                         allow="accelerometer; autoplay; clipboard-write;
                                                encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
-                            </div>
-                            <div class="project-overlay">
-                                <a href="Projects/Power BI/Power BI Walkthrough Presentation - Beginner Level.pdf" target="_blank"
-                                   rel="noopener" class="btn btn-sm btn-light me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>Slides
-                                </a>
-                                <a href="https://github.com/xMPon" target="_blank"
-                                   rel="noopener" class="btn btn-sm btn-light me-2">
-                                    <i class="fab fa-github me-1"></i>GitHub
-                                </a>
                             </div>
                         </div>
                         <div class="project-body">
@@ -684,11 +650,13 @@
                                 <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span><span class="tag">Data Analysis</span>
                             </div>
                             <div class="project-links mt-2">
-                                <a href="Projects/Power BI/Power BI Walkthrough Presentation - Beginner Level.pdf" target="_blank" rel="noopener" class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-file-pdf me-1"></i>Slides</a>
-                                <a href="Projects/Power BI/Finished Walkthrough Report - Beginner Level.pbix" download class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-download me-1"></i>.pbix</a>
-                                <a href="Projects/Power BI/Data/customers.csv" download class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-table me-1"></i>Customers</a>
-                                <a href="Projects/Power BI/Data/products.csv" download class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-table me-1"></i>Products</a>
-                                <a href="Projects/Power BI/Data/orders.xlsx" download class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-file-excel me-1"></i>Orders</a>
+                                <button type="button" class="btn btn-xs btn-outline-primary me-1 mb-1"
+                                        data-bs-toggle="modal" data-bs-target="#certViewModal"
+                                        data-cert-src="Projects/Power BI/Power BI Walkthrough Presentation - Beginner Level.pdf"
+                                        data-cert-title="Power BI Walkthrough – Slides">
+                                    <i class="fas fa-file-pdf me-1"></i>View Slides
+                                </button>
+                                <a href="https://github.com/xMPon" target="_blank" rel="noopener" class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fab fa-github me-1"></i>GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -713,29 +681,6 @@
                             and export professional reports — built with React, Node.js and PostgreSQL.</p>
                             <div class="project-tags">
                                 <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Auth0</span><span class="tag">Stripe</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 6: SAS Data Analysis -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="data" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-card">
-                        <div class="project-img-wrap">
-                            <img src="assets/img/project-placeholder.svg" alt="SAS Data Analysis" class="img-fluid">
-                            <div class="project-overlay">
-                                <a href="Achievements/SAS_Certificate_of_Completion.pdf" target="_blank"
-                                   class="btn btn-sm btn-light me-2">
-                                    <i class="fas fa-certificate me-1"></i>Certificate
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <span class="project-cat">Data</span>
-                            <h5 data-translate="proj6_title">SAS Base Programming</h5>
-                            <p data-translate="proj6_desc">Achieved SAS Certified Specialist: Base Programming (SAS 9.4).
-                            Proficient in data manipulation, PROC steps, macros and reporting in SAS for enterprise analytics.</p>
-                            <div class="project-tags">
-                                <span class="tag">SAS</span><span class="tag">Data Manipulation</span><span class="tag">Reporting</span>
                             </div>
                         </div>
                     </div>
@@ -773,16 +718,6 @@
                                                encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                             </div>
-                            <div class="project-overlay">
-                                <a href="Projects/Blockchain/Dissertation.pdf" target="_blank"
-                                   rel="noopener" class="btn btn-sm btn-light me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>Dissertation
-                                </a>
-                                <a href="https://github.com/xMPon/Git_Computing_Project" target="_blank"
-                                   rel="noopener" class="btn btn-sm btn-light me-2">
-                                    <i class="fab fa-github me-1"></i>GitHub
-                                </a>
-                            </div>
                         </div>
                         <div class="project-body">
                             <span class="project-cat">Dev</span>
@@ -792,7 +727,13 @@
                                 <span class="tag">Python</span><span class="tag">Blockchain</span><span class="tag">Supply Chain</span><span class="tag">Dissertation</span>
                             </div>
                             <div class="project-links mt-2">
-                                <a href="Projects/Blockchain/Dissertation.pdf" target="_blank" rel="noopener" class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fas fa-file-pdf me-1"></i>Dissertation PDF</a>
+                                <button type="button" class="btn btn-xs btn-outline-primary me-1 mb-1"
+                                        data-bs-toggle="modal" data-bs-target="#certViewModal"
+                                        data-cert-src="Projects/Blockchain/Dissertation.pdf"
+                                        data-cert-title="Blockchain Supply Chain Dissertation">
+                                    <i class="fas fa-file-pdf me-1"></i>View Dissertation
+                                </button>
+                                <a href="https://github.com/xMPon/Git_Computing_Project" target="_blank" rel="noopener" class="btn btn-xs btn-outline-secondary me-1 mb-1"><i class="fab fa-github me-1"></i>GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -967,6 +908,8 @@
                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/xMPon" target="_blank" rel="noopener"
                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.credly.com/users/mp-maciej-poniewierski" target="_blank" rel="noopener"
+                           aria-label="Credly"><i class="fas fa-medal"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
@@ -1228,20 +1171,20 @@
                 </div>
                 <div class="modal-body">
 
-                    <h6 class="module-year-heading"><i class="fas fa-microchip me-2"></i>Level 3 Modules</h6>
+                    <h6 class="module-year-heading"><i class="fas fa-microchip me-2"></i>Modules</h6>
                     <table class="table table-sm module-table mb-2">
-                        <thead><tr><th>Module</th><th class="text-center">Result</th></tr></thead>
+                        <thead><tr><th>Module</th><th class="text-center">Level</th><th class="text-center">Result</th></tr></thead>
                         <tbody>
-                            <tr><td>Communication and Employability Skills for IT</td><td class="text-center"><span class="badge bg-dark">Distinction</span></td></tr>
-                            <tr><td>Computer Systems</td><td class="text-center"><span class="badge bg-dark">Distinction</span></td></tr>
-                            <tr><td>Impact of the Use of IT on Business Systems</td><td class="text-center"><span class="badge bg-secondary">Merit</span></td></tr>
-                            <tr><td>E-Commerce</td><td class="text-center"><span class="badge bg-dark">Distinction</span></td></tr>
-                            <tr><td>IT Technical Support</td><td class="text-center"><span class="badge bg-light text-dark">Pass</span></td></tr>
-                            <tr><td>IT Systems Troubleshooting and Repairs</td><td class="text-center"><span class="badge bg-light text-dark">Pass</span></td></tr>
-                            <tr><td>Human Computer Interaction</td><td class="text-center"><span class="badge bg-dark">Distinction</span></td></tr>
-                            <tr><td>Website Production</td><td class="text-center"><span class="badge bg-secondary">Merit</span></td></tr>
-                            <tr><td>Digital Graphics</td><td class="text-center"><span class="badge bg-dark">Distinction</span></td></tr>
-                            <tr><td>3D Modelling</td><td class="text-center"><span class="badge bg-secondary">Merit</span></td></tr>
+                            <tr><td>Communication and Employability Skills for IT</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success">Distinction</span></td></tr>
+                            <tr><td>Computer Systems</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success">Distinction</span></td></tr>
+                            <tr><td>Impact of the Use of IT on Business Systems</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success opacity-75">Merit</span></td></tr>
+                            <tr><td>E-Commerce</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success">Distinction</span></td></tr>
+                            <tr><td>IT Technical Support</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success opacity-50">Pass</span></td></tr>
+                            <tr><td>IT Systems Troubleshooting and Repairs</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success opacity-50">Pass</span></td></tr>
+                            <tr><td>Human Computer Interaction</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success">Distinction</span></td></tr>
+                            <tr><td>Website Production</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success opacity-75">Merit</span></td></tr>
+                            <tr><td>Digital Graphics</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success">Distinction</span></td></tr>
+                            <tr><td>3D Modelling</td><td class="text-center">3</td><td class="text-center"><span class="badge bg-success opacity-75">Merit</span></td></tr>
                         </tbody>
                     </table>
 
