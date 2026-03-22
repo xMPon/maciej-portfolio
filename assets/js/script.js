@@ -742,7 +742,19 @@ function initCertModal() {
         const src   = trigger.getAttribute('data-cert-src')   || '';
         const title = trigger.getAttribute('data-cert-title') || 'Certificate';
         document.getElementById('certViewModalLabel').textContent = title;
-        document.getElementById('certViewFrame').src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
+        const frame    = document.getElementById('certViewFrame');
+        const fallback = document.getElementById('certViewFallback');
+        if (window.matchMedia('(max-width: 767.98px)').matches) {
+            frame.src = '';
+            frame.classList.add('d-none');
+            document.getElementById('certViewOpenLink').href = src;
+            document.getElementById('certViewDownloadLink').href = src;
+            fallback.classList.remove('d-none');
+        } else {
+            fallback.classList.add('d-none');
+            frame.classList.remove('d-none');
+            frame.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
+        }
     });
     modal.addEventListener('hide.bs.modal', function () {
         document.getElementById('certViewFrame').src = '';
