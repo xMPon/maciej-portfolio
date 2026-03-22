@@ -584,15 +584,28 @@ function applyLanguage(lang) {
 }
 
 /* ── Contact Form ─────────────────────────────────────────── */
+function getWeb3FormsAccessKey() {
+    const accessKeyMeta = document.querySelector('meta[name="web3forms-access-key"]');
+    const value = accessKeyMeta?.content?.trim() || '';
+    if (!value || value.startsWith('REPLACE_WITH_')) return '';
+    return value;
+}
+
 function initContactForm() {
     const form = document.getElementById('contactForm');
     const alert = document.getElementById('formAlert');
+    const botcheck = document.getElementById('contactBotcheck');
     if (!form || !alert) return;
+
+    const accessKey = getWeb3FormsAccessKey();
+    const formOpenedAt = Date.now();
+    const MIN_FILL_TIME_MS = 3000;
+    const MIN_SUBMIT_INTERVAL_MS = 60000;
 
     form.addEventListener('submit', e => {
         e.preventDefault();
 
-        const email   = document.getElementById('contactEmail');
+        const email = document.getElementById('contactEmail');
         const subject = document.getElementById('contactSubject');
         const message = document.getElementById('contactMessage');
 
@@ -606,6 +619,39 @@ function initContactForm() {
 
         if (!valid) return;
 
+        if (!accessKey) {
+            showFormAlert(alert, 'danger',
+                '<i class="fas fa-exclamation-circle me-2"></i>Contact form is not configured. Please email me directly.');
+            return;
+        }
+
+        if (botcheck && botcheck.value.trim()) {
+            showFormAlert(alert, 'danger',
+                '<i class="fas fa-shield-alt me-2"></i>Submission blocked.');
+            return;
+        }
+
+        if (Date.now() - formOpenedAt < MIN_FILL_TIME_MS) {
+            showFormAlert(alert, 'danger',
+                '<i class="fas fa-hourglass-half me-2"></i>Please wait a few seconds before sending.');
+            return;
+        }
+
+        let lastSubmitTs = 0;
+        try {
+            lastSubmitTs = Number(localStorage.getItem('contact-last-submit-ts') || '0');
+        } catch (_) {
+            lastSubmitTs = 0;
+        }
+
+        const elapsedSinceLast = Date.now() - lastSubmitTs;
+        if (elapsedSinceLast < MIN_SUBMIT_INTERVAL_MS) {
+            const waitSeconds = Math.ceil((MIN_SUBMIT_INTERVAL_MS - elapsedSinceLast) / 1000);
+            showFormAlert(alert, 'danger',
+                `<i class="fas fa-clock me-2"></i>Please wait ${waitSeconds}s before sending another message.`);
+            return;
+        }
+
         const btn = form.querySelector('button[type="submit"]');
         btn.disabled = true;
 
@@ -613,18 +659,25 @@ function initContactForm() {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                access_key: 'REPLACE_WITH_NEW_WEB3FORMS_ACCESS_KEY',
-                email: email.value,
-                subject: subject.value,
-                message: message.value
+                access_key: accessKey,
+                email: email.value.trim(),
+                subject: subject.value.trim(),
+                message: message.value.trim(),
+                botcheck: ''
             })
         })
         .then(res => res.json())
         .then(data => {
             if (data.success) {
+                try {
+                    localStorage.setItem('contact-last-submit-ts', String(Date.now()));
+                } catch (_) {
+                    // Ignore localStorage errors in restrictive browsing modes.
+                }
                 showFormAlert(alert, 'success',
                     '<i class="fas fa-check-circle me-2"></i>Message sent! I\'ll get back to you soon.');
                 form.reset();
+                if (botcheck) botcheck.value = '';
             } else {
                 showFormAlert(alert, 'danger',
                     '<i class="fas fa-exclamation-circle me-2"></i>Something went wrong. Please try again.');

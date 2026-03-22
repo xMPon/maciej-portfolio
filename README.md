@@ -16,7 +16,7 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 - **Module viewer** — detailed module breakdowns for MSc (University of Bristol), BSc (Oxford Brookes) and CII qualifications
 - **Animated** — scroll-triggered animations via AOS
 - **Portfolio filter** — project cards filterable by category (FinTech, Data, Web)
-- **Contact form** — integrated EmailJS contact form
+- **Contact form** — integrated Web3Forms contact flow with anti-bot throttling and honeypot checks
 
 ## Tech Stack
 
@@ -27,7 +27,7 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 | Scripts | Vanilla JavaScript (ES6) |
 | Animations | AOS 2.3 |
 | Icons | Font Awesome 6.5 |
-| Contact | EmailJS |
+| Contact | Web3Forms |
 
 ## Sections
 
@@ -39,6 +39,17 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 6. **Portfolio** — selected projects with descriptions and links
 7. **Hobbies** — personal interests
 8. **Contact** — contact form and social links
+
+## Data Note
+
+- `Projects/Power BI/Data/customers.csv` is a synthetic dataset for portfolio demonstration only.
+
+## Contact Form Security
+
+- Rotate your Web3Forms access key if previously exposed.
+- Restrict allowed domains in Web3Forms to your production domains only.
+- Enable CAPTCHA/challenge mode in your Web3Forms dashboard.
+- Set `web3forms-access-key` in `index.html` to your newly rotated key.
 
 ## Certifications Included
 
