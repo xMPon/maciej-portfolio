@@ -679,9 +679,10 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.mod-col-code   { width: 8%; }
-.mod-col-stat   { width: 13%; }
-.mod-col-result { width: 14%; }
+.mod-col-code       { width: 8%; }
+.mod-col-stat       { width: 13%; }
+.mod-col-result     { width: 14%; }
+.mod-col-bath-level { width: 10%; }
 
 
 /* ── Portfolio ──────────────────────────────────────────────── */
