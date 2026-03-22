@@ -935,6 +935,14 @@ body {
     .btn-hero { width: 100%; max-width: 260px; }
 }
 
+/* ── Cert: iframe on desktop, cert-visual on mobile ─────────── */
+.cert-img-wrap .cert-visual { display: none; }
+
+@media (max-width: 767.98px) {
+    .cert-img-wrap iframe { display: none; }
+    .cert-img-wrap .cert-visual { display: flex; }
+}
+
 /* ── Touch devices: show overlays without hover ─────────────── */
 @media (hover: none) {
     .cert-overlay,
