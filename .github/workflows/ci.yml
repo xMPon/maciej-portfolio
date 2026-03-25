@@ -70,6 +70,8 @@ jobs:
     name: Lighthouse Audit
     runs-on: ubuntu-latest
     needs: [security-audit, validate-html]
+    # Lighthouse is slow and costly — only run on push to main, not PRs
+    if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
