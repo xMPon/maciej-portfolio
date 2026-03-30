@@ -358,6 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initBackToTop();
     initFooterYear();
     initCertModal();
+    initYtThumbs();
 
     // Apply saved language on load
     applyLanguage(currentLang);
@@ -735,6 +736,24 @@ function initEmailLink() {
 function initFooterYear() {
     const el = document.getElementById('footerYear');
     if (el) el.textContent = new Date().getFullYear();
+}
+
+/* ── YouTube Thumbnail Fallback ──────────────────────────── */
+function initYtThumbs() {
+    // maxresdefault.jpg is the primary source (1280×720, true 16:9).
+    // If unavailable (private/unlisted video or no HD upload), fall back to
+    // hqdefault.jpg, then to the local project placeholder.
+    document.querySelectorAll('.yt-thumb-link img').forEach(img => {
+        img.addEventListener('error', function onErr() {
+            img.removeEventListener('error', onErr);
+            const src = img.src;
+            if (src.includes('maxresdefault')) {
+                img.src = src.replace('maxresdefault', 'hqdefault');
+            } else {
+                img.src = 'assets/img/project-placeholder.svg';
+            }
+        });
+    });
 }
 
 /* ── Certificate Viewer Modal ─────────────────────────────── */
