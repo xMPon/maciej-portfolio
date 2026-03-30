@@ -53,6 +53,7 @@ const translations = {
         proj6_title: 'SAS Base Programming',
         proj7_title: 'Mortgage Repayment Calculator',
         proj8_title: 'Blockchain Supply Chain Dissertation',
+        proj9_title: 'FinNerd Blog',
 
         hob_tag: 'Outside Work', hob_title: 'Hobbies & Interests',
         hob1: 'AI & Automation', hob2: 'Boxing', hob3: 'Data & Finance',
@@ -116,6 +117,7 @@ const translations = {
         proj6_title: 'Programmation de Base SAS',
         proj7_title: 'Calculatrice de Remboursement Hypothécaire',
         proj8_title: 'Dissertation Blockchain sur la Chaîne d\'Approvisionnement',
+        proj9_title: 'Blog FinNerd',
 
         hob_tag: 'Hors Travail', hob_title: 'Loisirs & Intérêts',
         hob1: 'IA & Automatisation', hob2: 'Boxe', hob3: 'Données & Finance',
@@ -179,6 +181,7 @@ const translations = {
         proj6_title: 'Programowanie Podstawowe SAS',
         proj7_title: 'Kalkulator Spłaty Kredytu Hipotecznego',
         proj8_title: 'Praca Dyplomowa: Blockchain w Łańcuchu Dostaw',
+        proj9_title: 'Blog FinNerd',
 
         hob_tag: 'Poza pracą', hob_title: 'Hobby i Zainteresowania',
         hob1: 'AI i Automatyzacja', hob2: 'Boks', hob3: 'Dane i Finanse',
@@ -242,6 +245,7 @@ const translations = {
         proj6_title: 'SAS Basisprogrammierung',
         proj7_title: 'Hypothekenrechner',
         proj8_title: 'Blockchain Lieferketten-Dissertation',
+        proj9_title: 'FinNerd Blog',
 
         hob_tag: 'Freizeit', hob_title: 'Hobbys & Interessen',
         hob1: 'KI & Automatisierung', hob2: 'Boxen', hob3: 'Daten & Finanzen',
@@ -305,6 +309,7 @@ const translations = {
         proj6_title: 'Programación Base SAS',
         proj7_title: 'Calculadora de Amortización Hipotecaria',
         proj8_title: 'Disertación Blockchain sobre Cadena de Suministro',
+        proj9_title: 'Blog FinNerd',
 
         hob_tag: 'Fuera del trabajo', hob_title: 'Aficiones e Intereses',
         hob1: 'IA y Automatización', hob2: 'Boxeo', hob3: 'Datos y Finanzas',
