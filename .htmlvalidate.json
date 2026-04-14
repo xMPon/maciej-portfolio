@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+  "rules": {
+    "hidden-focusable": "off",
+    "prefer-native-element": "off"
+  }
+}

@@ -63,7 +63,7 @@ jobs:
           node-version: '20'
 
       - name: Validate HTML
-        run: npx --yes html-validate@latest index.html error.html
+        run: npx --yes html-validate@latest --config .htmlvalidate.json index.html error.html
 
   # ── Lighthouse Audit ─────────────────────────────────────────────────────────
   lighthouse:
