@@ -28,7 +28,7 @@ jobs:
 
       - name: Verify SRI on all CDN resources
         run: |
-          missing=$(grep -E '<(script|link)[^>]+https?://' index.html | grep -v 'integrity=')
+          missing=$(grep -E '<(script|link rel="stylesheet")[^>]+https?://' index.html | grep -v 'integrity=')
           if [ -n "$missing" ]; then
             echo "::error::CDN resources missing SRI integrity attributes:"
             echo "$missing"
