@@ -51,6 +51,14 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 - Enable CAPTCHA/challenge mode in your Web3Forms dashboard.
 - Set `web3forms-access-key` in `index.html` to your newly rotated key.
 
+## HTML Validation Notes
+
+- The file `.htmlvalidate.json` must remain strict JSON, so comments like `//` and `/* */` are not allowed.
+- JSON intentionally forbids comments to keep config parsing deterministic across tooling.
+- Keep configuration rationale in documentation (this README section) or commit messages, not inside JSON config files.
+- `hidden-focusable` is intentionally disabled to avoid false positives from Bootstrap modal focus behavior.
+- `prefer-native-element` is intentionally disabled because this UI uses framework-driven interactive patterns where strict native-only enforcement is too restrictive.
+
 ## Certifications Included
 
 - Microsoft Azure Fundamentals AZ-900
