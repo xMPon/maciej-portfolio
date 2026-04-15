@@ -30,7 +30,15 @@ jobs:
         # Only check <script> and stylesheet <link> tags that load external resources.
         # Canonical and other non-resource <link> tags do not require SRI/crossorigin.
         run: |
-          resources=$(grep -E '<script[^>]+src="https?://|<link[^>]+href="https?://[^"]+"[^>]*rel="stylesheet"|<link[^>]+rel="stylesheet"[^>]*href="https?://' index.html || true)
+          script_resources=$(grep -E '<script[^>]+src="https?://' index.html || true)
+          stylesheet_resources=$(grep -E '<link[^>]+href="https?://[^"]+"[^>]*rel="stylesheet"|<link[^>]+rel="stylesheet"[^>]*href="https?://' index.html || true)
+          resources=$(printf '%s\n%s\n' "$script_resources" "$stylesheet_resources" | sed '/^$/d')
+
+          if [ -z "$resources" ]; then
+            echo "No external script or stylesheet CDN resources found to validate."
+            exit 0
+          fi
+
           missing_integrity=$(printf '%s\n' "$resources" | grep -v 'integrity=' || true)
           missing_crossorigin=$(printf '%s\n' "$resources" | grep -v 'crossorigin="anonymous"' || true)
 
