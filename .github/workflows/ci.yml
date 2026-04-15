@@ -31,8 +31,25 @@ jobs:
         # Canonical and other non-resource <link> tags do not require SRI/crossorigin.
         run: |
           script_resources=$(grep -E '<script[^>]+src="https?://' index.html || true)
-          stylesheet_resources=$(grep -E '<link[^>]+href="https?://[^"]+"[^>]*rel="stylesheet"|<link[^>]+rel="stylesheet"[^>]*href="https?://' index.html || true)
-          resources=$(printf '%s\n%s\n' "$script_resources" "$stylesheet_resources" | sed '/^$/d')
+          stylesheet_resources_href_first=$(grep -E '<link[^>]+href="https?://[^"]+"[^>]*rel="stylesheet"' index.html || true)
+          stylesheet_resources_rel_first=$(grep -E '<link[^>]+rel="stylesheet"[^>]*href="https?://' index.html || true)
+          stylesheet_resources="$stylesheet_resources_href_first"
+          if [ -n "$stylesheet_resources_rel_first" ]; then
+            if [ -n "$stylesheet_resources" ]; then
+              stylesheet_resources=$(printf '%s\n%s' "$stylesheet_resources" "$stylesheet_resources_rel_first")
+            else
+              stylesheet_resources="$stylesheet_resources_rel_first"
+            fi
+          fi
+
+          resources="$script_resources"
+          if [ -n "$stylesheet_resources" ]; then
+            if [ -n "$resources" ]; then
+              resources=$(printf '%s\n%s' "$resources" "$stylesheet_resources")
+            else
+              resources="$stylesheet_resources"
+            fi
+          fi
 
           if [ -z "$resources" ]; then
             echo "No external script or stylesheet CDN resources found to validate."
