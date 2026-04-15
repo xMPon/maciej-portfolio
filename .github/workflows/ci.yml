@@ -27,6 +27,8 @@ jobs:
           echo "No exposed API keys found."
 
       - name: Verify SRI on all CDN resources
+          # Only check <script> and <link rel="stylesheet"> tags for SRI integrity attributes.
+          # Canonical and other non-resource <link> tags do not require SRI and are excluded.
         run: |
           missing=$(grep -E '<(script|link rel="stylesheet")[^>]+https?://' index.html | grep -v 'integrity=')
           if [ -n "$missing" ]; then
