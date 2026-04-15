@@ -27,16 +27,50 @@ jobs:
           echo "No exposed API keys found."
 
       - name: Verify SRI on all CDN resources
-          # Only check <script> and <link rel="stylesheet"> tags for SRI integrity attributes.
-          # Canonical and other non-resource <link> tags do not require SRI and are excluded.
+        # Only check <script> and stylesheet <link> tags that load external resources.
+        # Canonical and other non-resource <link> tags do not require SRI/crossorigin.
         run: |
-          missing=$(grep -E '<(script|link rel="stylesheet")[^>]+https?://' index.html | grep -v 'integrity=')
-          if [ -n "$missing" ]; then
+          script_resources=$(grep -E '<script[^>]+src="https?://' index.html || true)
+          stylesheet_resources_href_first=$(grep -E '<link[^>]+href="https?://[^"]+"[^>]*rel="stylesheet"' index.html || true)
+          stylesheet_resources_rel_first=$(grep -E '<link[^>]+rel="stylesheet"[^>]*href="https?://' index.html || true)
+          stylesheet_resources="$stylesheet_resources_href_first"
+          if [ -n "$stylesheet_resources_rel_first" ]; then
+            if [ -n "$stylesheet_resources" ]; then
+              stylesheet_resources=$(printf '%s\n%s' "$stylesheet_resources" "$stylesheet_resources_rel_first")
+            else
+              stylesheet_resources="$stylesheet_resources_rel_first"
+            fi
+          fi
+
+          resources="$script_resources"
+          if [ -n "$stylesheet_resources" ]; then
+            if [ -n "$resources" ]; then
+              resources=$(printf '%s\n%s' "$resources" "$stylesheet_resources")
+            else
+              resources="$stylesheet_resources"
+            fi
+          fi
+
+          if [ -z "$resources" ]; then
+            echo "No external script or stylesheet CDN resources found to validate."
+            exit 0
+          fi
+
+          missing_integrity=$(printf '%s\n' "$resources" | grep -v 'integrity=' || true)
+          missing_crossorigin=$(printf '%s\n' "$resources" | grep -v 'crossorigin="anonymous"' || true)
+
+          if [ -n "$missing_integrity" ]; then
             echo "::error::CDN resources missing SRI integrity attributes:"
-            echo "$missing"
+            echo "$missing_integrity"
             exit 1
           fi
-          echo "All CDN resources have SRI integrity attributes."
+
+          if [ -n "$missing_crossorigin" ]; then
+            echo "::error::CDN resources missing crossorigin=\"anonymous\" attributes:"
+            echo "$missing_crossorigin"
+            exit 1
+          fi
+          echo "All CDN resources have SRI integrity and crossorigin attributes."
 
       - name: Verify script-src does not contain unsafe-inline
         run: |
