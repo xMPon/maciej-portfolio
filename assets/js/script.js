@@ -58,7 +58,7 @@ const translations = {
         hob_tag: 'Outside Work', hob_title: 'Hobbies & Interests',
         hob1: 'AI & Automation', hob2: 'Boxing', hob3: 'Data & Finance',
         hob4: 'Investing', hob5: 'Running', hob6: 'Snowboarding',
-        hob7: 'Tennis', hob8: 'Travel', hob9: 'Trekking',
+        hob7: 'Tennis', hob8: 'Travel', hob9: 'Trekking', hob10: 'Cooking',
 
         con_tag: 'Say Hello', con_title: 'Get In Touch',
         con_sub: 'Open to new opportunities, collaborations, or just a chat about data, finance and technology.',
@@ -122,7 +122,7 @@ const translations = {
         hob_tag: 'Hors Travail', hob_title: 'Loisirs & Intérêts',
         hob1: 'IA & Automatisation', hob2: 'Boxe', hob3: 'Données & Finance',
         hob4: 'Investissement', hob5: 'Course à pied', hob6: 'Snowboard',
-        hob7: 'Tennis', hob8: 'Voyages', hob9: 'Randonnée',
+        hob7: 'Tennis', hob8: 'Voyages', hob9: 'Randonnée', hob10: 'Cuisine',
 
         con_tag: 'Dire Bonjour', con_title: 'Contactez-moi',
         con_sub: 'Ouvert aux nouvelles opportunités, collaborations ou simplement à une conversation sur les données, la finance et la technologie.',
@@ -186,7 +186,7 @@ const translations = {
         hob_tag: 'Poza pracą', hob_title: 'Hobby i Zainteresowania',
         hob1: 'AI i Automatyzacja', hob2: 'Boks', hob3: 'Dane i Finanse',
         hob4: 'Inwestowanie', hob5: 'Bieganie', hob6: 'Snowboard',
-        hob7: 'Tenis', hob8: 'Podróże', hob9: 'Trekking',
+        hob7: 'Tenis', hob8: 'Podróże', hob9: 'Trekking', hob10: 'Gotowanie',
 
         con_tag: 'Napisz', con_title: 'Skontaktuj się',
         con_sub: 'Otwarty na nowe możliwości, współpracę lub rozmowę o danych, finansach i technologii.',
@@ -250,7 +250,7 @@ const translations = {
         hob_tag: 'Freizeit', hob_title: 'Hobbys & Interessen',
         hob1: 'KI & Automatisierung', hob2: 'Boxen', hob3: 'Daten & Finanzen',
         hob4: 'Investieren', hob5: 'Laufen', hob6: 'Snowboard',
-        hob7: 'Tennis', hob8: 'Reisen', hob9: 'Trekking',
+        hob7: 'Tennis', hob8: 'Reisen', hob9: 'Trekking', hob10: 'Kochen',
 
         con_tag: 'Hallo sagen', con_title: 'Kontakt aufnehmen',
         con_sub: 'Offen für neue Möglichkeiten, Kooperationen oder ein Gespräch über Daten, Finanzen und Technologie.',
@@ -314,7 +314,7 @@ const translations = {
         hob_tag: 'Fuera del trabajo', hob_title: 'Aficiones e Intereses',
         hob1: 'IA y Automatización', hob2: 'Boxeo', hob3: 'Datos y Finanzas',
         hob4: 'Inversión', hob5: 'Carrera', hob6: 'Snowboard',
-        hob7: 'Tenis', hob8: 'Viajes', hob9: 'Senderismo',
+        hob7: 'Tenis', hob8: 'Viajes', hob9: 'Senderismo', hob10: 'Cocina',
 
         con_tag: 'Di hola', con_title: 'Ponte en contacto',
         con_sub: 'Abierto a nuevas oportunidades, colaboraciones o simplemente a charlar sobre datos, finanzas y tecnología.',
