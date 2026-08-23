@@ -1,0 +1,36 @@
+name: Yearly Experience Update
+
+on:
+  schedule:
+    - cron: '0 0 1 1 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-experience:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update experience counter
+        run: python .github/scripts/update-experience-years.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "Maciej Poniewierski"
+          git config user.email "72807462+xMPon@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update years experience counter"
+          git push origin master
