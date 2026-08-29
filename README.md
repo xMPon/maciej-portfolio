@@ -6,7 +6,7 @@ https://xmpon.github.io/maciej-portfolio/
 
 ## Overview
 
-This site presents my professional profile as a Financial Modelling Analyst and Data Analytics specialist. It covers my work experience, education, technical skills, certifications and selected projects.
+This site presents my professional profile as a Senior Financial Data Analyst working across financial modelling, data analytics and machine learning. It covers my work experience, education, technical skills, certifications and selected projects.
 
 ## Features
 
@@ -35,7 +35,7 @@ This site presents my professional profile as a Financial Modelling Analyst and 
 2. **Skills** — technical skills across analytics, cloud, development and delivery
 3. **Achievements** — professional certifications (AZ-900, SAFe, SAS, CII)
 4. **Education** — MSc Bristol, CII Level 3, BSc Oxford Brookes, City of Bath College
-5. **Experience** — six roles from 2017 to present
+5. **Experience** — eight roles from 2017 to present
 6. **Portfolio** — selected projects with descriptions and links
 7. **Hobbies** — personal interests
 8. **Contact** — contact form and social links

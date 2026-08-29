@@ -17,8 +17,8 @@ const translations = {
 
         hero_greeting: "Hello, I'm",
         hero_name: 'Maciej Poniewierski',
-        hero_title: 'Financial Modelling Analyst · Data Analytics',
-        hero_bio: 'Experienced financial modeller and data analyst in financial services, with hands-on experience building Excel, Python and C# models for budgeting, forecasting and regulatory change. Skilled in SQL, Azure and Power BI, translating complex data into clear insights for stakeholders.',
+        hero_title: 'Senior Financial Data Analyst · Data & Machine Learning',
+        hero_bio: 'Senior financial data analyst in UK wealth management, building financial models and data pipelines with Excel, Python, SQL and Snowflake. I work end to end — from regulatory change and forecasting through to shipping production software on Azure, Power BI and modern web stacks — and I am now focused on machine learning and AI-assisted engineering.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Get In Touch',
         hero_download: '<i class="fas fa-file-lines me-2"></i>View CV',
 
@@ -81,8 +81,8 @@ const translations = {
 
         hero_greeting: 'Bonjour, je suis',
         hero_name: 'Maciej Poniewierski',
-        hero_title: 'Analyste en Modélisation Financière · Data Analytics',
-        hero_bio: "Analyste financier expérimenté dans les services financiers, spécialisé dans la modélisation Excel, Python et C# pour la budgétisation, les prévisions et la conformité réglementaire. Compétent en SQL, Azure et Power BI.",
+        hero_title: 'Analyste Senior de Données Financières · Data & Machine Learning',
+        hero_bio: "Analyste senior de données financières dans la gestion de patrimoine au Royaume-Uni : modèles financiers et pipelines de données en Excel, Python, SQL et Snowflake. Je couvre toute la chaîne, du changement réglementaire et des prévisions jusqu'à la mise en production de logiciels sur Azure et Power BI, avec un focus actuel sur le machine learning et l'ingénierie assistée par IA.",
         hero_cta: '<i class="fas fa-envelope me-2"></i>Me Contacter',
         hero_download: '<i class="fas fa-file-lines me-2"></i>Voir le CV',
 
@@ -145,8 +145,8 @@ const translations = {
 
         hero_greeting: 'Cześć, jestem',
         hero_name: 'Maciej Poniewierski',
-        hero_title: 'Analityk Modelowania Finansowego · Analityka Danych',
-        hero_bio: 'Doświadczony analityk finansowy i danych w sektorze usług finansowych, specjalizujący się w budowaniu modeli w Excelu, Pythonie i C# do budżetowania, prognozowania i zmian regulacyjnych. Biegły w SQL, Azure i Power BI.',
+        hero_title: 'Starszy Analityk Danych Finansowych · Dane i Uczenie Maszynowe',
+        hero_bio: 'Starszy analityk danych finansowych w brytyjskim sektorze zarządzania majątkiem — buduję modele finansowe i procesy danych w Excelu, Pythonie, SQL i Snowflake. Pracuję od zmian regulacyjnych i prognozowania po wdrażanie oprogramowania produkcyjnego w Azure i Power BI, a obecnie skupiam się na uczeniu maszynowym i inżynierii wspieranej przez AI.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Skontaktuj się',
         hero_download: '<i class="fas fa-file-lines me-2"></i>Zobacz CV',
 
@@ -209,8 +209,8 @@ const translations = {
 
         hero_greeting: 'Hallo, ich bin',
         hero_name: 'Maciej Poniewierski',
-        hero_title: 'Financial Modelling Analyst · Datenanalyse',
-        hero_bio: 'Erfahrener Finanzmodeller und Datenanalyst im Finanzdienstleistungsbereich, spezialisiert auf Excel-, Python- und C#-Modelle für Budgetierung, Prognosen und regulatorische Änderungen. Kenntnisse in SQL, Azure und Power BI.',
+        hero_title: 'Senior Financial Data Analyst · Daten & Machine Learning',
+        hero_bio: 'Senior Financial Data Analyst in der britischen Vermögensverwaltung — ich baue Finanzmodelle und Datenpipelines mit Excel, Python, SQL und Snowflake. Von regulatorischen Änderungen und Forecasting bis zum Ausliefern produktiver Software auf Azure und Power BI, mit aktuellem Fokus auf Machine Learning und KI-gestützte Entwicklung.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Kontakt aufnehmen',
         hero_download: '<i class="fas fa-file-lines me-2"></i>Lebenslauf ansehen',
 
@@ -273,8 +273,8 @@ const translations = {
 
         hero_greeting: 'Hola, soy',
         hero_name: 'Maciej Poniewierski',
-        hero_title: 'Analista de Modelización Financiera · Análisis de Datos',
-        hero_bio: 'Analista financiero y de datos con experiencia en servicios financieros, especializado en modelos Excel, Python y C# para presupuestación, previsión y cambios regulatorios. Con dominio de SQL, Azure y Power BI.',
+        hero_title: 'Analista Senior de Datos Financieros · Datos y Machine Learning',
+        hero_bio: 'Analista senior de datos financieros en la gestión patrimonial del Reino Unido: construyo modelos financieros y pipelines de datos con Excel, Python, SQL y Snowflake. Trabajo de principio a fin, desde el cambio regulatorio y la previsión hasta desplegar software en producción con Azure y Power BI, y ahora me centro en machine learning e ingeniería asistida por IA.',
         hero_cta: '<i class="fas fa-envelope me-2"></i>Contactar',
         hero_download: '<i class="fas fa-file-lines me-2"></i>Ver CV',
 
