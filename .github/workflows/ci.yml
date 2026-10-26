@@ -96,7 +96,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Validate HTML
         run: npx --yes html-validate@latest --config .htmlvalidate.json index.html error.html
@@ -112,7 +112,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Serve site locally
         run: npx --yes serve@latest . --listen 3000 &
